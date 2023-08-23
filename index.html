@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Budgetrr</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="media/Icons/favicon-32x32.png">
+</head>
+<body>
+    <main class="budget-container">
+        <section class="balance-container">
+        <div class="app-title">
+            <p>Budgetrr</p>
+           <!-- <input class="month" type="text" placeholder="Enter Month"></input>
+           <div class="month-name">GHGH</div> -->
+        </div>
+
+        <section class="budget-header">
+            <div class="balance">
+                <div class="title">
+                    Balance
+                </div>
+                <div class="value">
+                    <small>$</small>0
+                </div>
+            </div>
+
+            <div class="account">
+                <div class="budget-income">
+                    <div class="title">
+                        Incomes
+                    </div>
+                    <div class="income-total">
+                        <small>$</small>0
+                    </div>
+                </div>
+                <div class="chart"></div>
+                <div class="budgetoutcome">
+                    <div class="title">
+                        Expenses
+                    </div>
+                    <div class="outcome-total">
+                        <small>$</small>0
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+        <section class="budget-dashboard">
+            <div class="dash-title">Dashboard</div>
+            <div class="toggle">
+                <div class="tab1 clicked">Expenses</div>
+                <div class="tab2">Income</div>
+            </div>
+
+            <div class="income-tab hidden">
+                <ul class="list"></ul>
+                <div class="income-input-container">
+                <form class="input">
+                    <input type="text" class="income-title-input" name="title" placeholder="Title">
+                    <input type="number" class="income-amount-input" name="amount" placeholder="$0">
+                    <button type = "button" class="add-income"><img class= "plus-img"src="media/Icons/icons8-add-new-48.png" alt=""></button>
+                </form>
+            </div>
+            </div>
+
+             <div class = "expense-tab">
+                <ul class="list"></ul>
+                <div class="expense-input-container">
+                <div class="input">
+                    <input type="text" class="expense-title-input" name="title" placeholder="Title">
+                    <input type="number" class="expense-amount-input" name="amount" placeholder="$0">
+                    <button type="button" class="add-expense"><img class= "plus-img" src="media/Icons/icons8-add-new-48.png" alt=""></button>
+                </div>
+                </div> 
+            </div>
+
+        </section>
+    </main>
+    <script src="JavaScript/budget.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.budget-container{
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+   
+    height: 100vh;
+    width: 100%;
+    background-color: #4F98CA;
+}
+
+
+.balance-container{
+    width: 360px;
+    height: 470px;
+    background-color: #50D890;
+    border-radius: 30px;
+    margin-right: 100px;
+    
+
+}
+
+
+.app-title{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between
+    
+}
+
+.month{
+    /* color: white; */
+    /* margin: 2.5rem 0 1.5rem 0 ;
+    text-align: center; */
+    border: none;
+    background-color: none;
+    outline: none;
+    all: unset;
+    width: 100px;
+    text-align: right;
+}
+
+.month::placeholder{
+    color: white;
+}
+
+
+.budget-header{
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+
+.balance{
+    margin-top: 3rem;
+    /* margin-left: 1rem; */
+    text-align: center;
+   
+}
+
+
+
+.title{
+    color: white;
+    font-size: 1.25rem;
+    opacity: .75;
+}
+
+.value{
+    font-size: 1.75rem;
+    color: white;
+    font-weight: bold;
+    
+    text-align: center;
+    
+}
+
+.account{
+    /* margin-top: 1rem; */
+    margin: 1.5rem 1.5rem 2.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between
+
+}
+
+.income-total{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.outcome-total{
+    color: #4F98CA;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/* DASHBOARD */
+
+
+.budget-dashboard{
+    display: block;
+    width: 360px;
+    height: 470px;
+    position: relative;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.dash-title{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    
+}
+
+.toggle{
+    margin: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+.toggle .tab2, .tab3{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.clicked{
+    font-weight: bold !important;
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+/* EXPENSES TAB */
+
+
+.expense-tab{
+    display: flex;
+    justify-content: center;
+}
+.expense-input-container{
+    position: absolute;
+    top: 400px;
+    border-top: solid 1px gray;  
+    width: 100%;
+    
+}
+
+.expense-amount-input{
+    width: 125px;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+
+.expense-title-input{
+    width: 125px;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.add-expense{
+   
+    all: unset;
+    
+}
+
+/* INCOME TAB */
+
+.income-tab{
+    display: flex;
+    justify-content: center;
+}
+
+.income-input-container{
+    position: absolute;
+    top: 400px;
+    border-top: solid 1px gray;  
+    width: 100%;
+    
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    
+}
+.income-amount-input{
+    width: 125px;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+} 
+
+.income-title-input{
+    width: 125px;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+
+.add-income{
+    
+    all: unset;
+}
+
+.plus-img{
+    width: 40px;
+    
+}
+
+
+/* li */
+
+ul{
+    width: 360px;
+    height: 255px;
+    list-style: none;
+    margin-top:20px;
+    overflow-x: auto;
+    
+}
+
+
+
+li{
+    font-size: 1.25rem;
+}
+
+
+/* BUTTON ICONS */
+
+.edit{
+    background-image: url('media/Icons/icons8-edit-48.png');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.delete{
+    background-image: url('media/Icons/icons8-trash-can-48 (2).png');
+    background-size: contain;
+    width:25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.income{
+    width:250px;
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    color: black
+}
+
+.expense{
+    width:250px;
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family: 'Gilroy Bold';
+    color: #4F98CA;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    padding-right: 20px;
+}
+
+.icon-container{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+
+   
+    .budget-container{
+    display: inline-block;
+    position: relative
+    }
+
+    .balance-container{
+    position: absolute;
+    /* top: 10%; */
+    top: 65px;
+    left: 25%;
+
+    }
+
+    .budget-dashboard{
+    position: absolute;
+    left: 25%;
+    /* top: 55%; */
+    top: 350px;
+    }
+}
